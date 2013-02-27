@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		212E872E16828ACB0040F9C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212E872C16828A350040F9C5 /* CoreGraphics.framework */; };
+		214E53F2169FD37D00A457C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5867E16827AD000AA5E50 /* UIKit.framework */; };
+		214E53F3169FD37D00A457C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F586441682757C00AA5E50 /* Foundation.framework */; };
+		214E53F9169FD37D00A457C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 214E53F7169FD37D00A457C3 /* InfoPlist.strings */; };
+		214E53FC169FD37D00A457C3 /* LLArrayControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 214E53FB169FD37D00A457C3 /* LLArrayControllerSpec.m */; };
+		214F3167169FDDAA009EB674 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F586531682757D00AA5E50 /* SenTestingKit.framework */; };
+		214F3169169FDEDE009EB674 /* LLIndexPathExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 214F3168169FDEDE009EB674 /* LLIndexPathExtensionTests.m */; };
+		214F3183169FE4A4009EB674 /* libLLTableViewAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F586411682757C00AA5E50 /* libLLTableViewAdapter.a */; };
+		21D0A4A716A367B000D80ACD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212E872C16828A350040F9C5 /* CoreGraphics.framework */; };
+		21F586451682757C00AA5E50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F586441682757C00AA5E50 /* Foundation.framework */; };
+		21F586711682766100AA5E50 /* LLArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5866E1682766100AA5E50 /* LLArrayController.m */; };
+		21F586721682766100AA5E50 /* LLTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F586701682766100AA5E50 /* LLTableViewAdapter.m */; };
+		21F5867C168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5867B168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.m */; };
+		21F5867F16827AD000AA5E50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5867E16827AD000AA5E50 /* UIKit.framework */; };
+		44274248505E4AFE9FABF5A1 /* libPods-KiwiUnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCA53512EB442899CEE8B65 /* libPods-KiwiUnitTest.a */; };
+		D4F29531053F474594028C08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CDCAA2935B46F496E2D921 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		214F3184169FE4BC009EB674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F586391682757C00AA5E50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F586401682757C00AA5E50;
+			remoteInfo = LLTableViewAdapter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21F5863F1682757C00AA5E50 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CCA53512EB442899CEE8B65 /* libPods-KiwiUnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiUnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		212E872C16828A350040F9C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		214E53F0169FD37D00A457C3 /* KiwiUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		214E53F6169FD37D00A457C3 /* KiwiUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiUnitTest-Info.plist"; sourceTree = "<group>"; };
+		214E53F8169FD37D00A457C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		214E53FB169FD37D00A457C3 /* LLArrayControllerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLArrayControllerSpec.m; sourceTree = "<group>"; };
+		214E53FD169FD37D00A457C3 /* KiwiUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiwiUnitTest-Prefix.pch"; sourceTree = "<group>"; };
+		214F3151169FDB82009EB674 /* LLTableViewAdapterTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LLTableViewAdapterTestApp-Info.plist"; sourceTree = "<group>"; };
+		214F3153169FDB82009EB674 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		214F3155169FDB82009EB674 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		214F3157169FDB82009EB674 /* LLTableViewAdapterTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLTableViewAdapterTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		214F3158169FDB82009EB674 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		214F3159169FDB82009EB674 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		214F315B169FDB82009EB674 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		214F315D169FDB82009EB674 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		214F315F169FDB82009EB674 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		214F3168169FDEDE009EB674 /* LLIndexPathExtensionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLIndexPathExtensionTests.m; sourceTree = "<group>"; };
+		21F586411682757C00AA5E50 /* libLLTableViewAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLTableViewAdapter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F586441682757C00AA5E50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21F586481682757C00AA5E50 /* LLTableViewAdapter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLTableViewAdapter-Prefix.pch"; sourceTree = "<group>"; };
+		21F586531682757D00AA5E50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		21F5866D1682766100AA5E50 /* LLArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLArrayController.h; sourceTree = "<group>"; };
+		21F5866E1682766100AA5E50 /* LLArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLArrayController.m; sourceTree = "<group>"; };
+		21F5866F1682766100AA5E50 /* LLTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTableViewAdapter.h; sourceTree = "<group>"; };
+		21F586701682766100AA5E50 /* LLTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTableViewAdapter.m; sourceTree = "<group>"; };
+		21F5867A168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+LLArrayControllerExtensions.h"; sourceTree = "<group>"; };
+		21F5867B168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+LLArrayControllerExtensions.m"; sourceTree = "<group>"; };
+		21F5867D168279BB00AA5E50 /* LLTableViewAdapter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LLTableViewAdapter.podspec; sourceTree = "<group>"; };
+		21F5867E16827AD000AA5E50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21F5868016827AE500AA5E50 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		21F5868116827AFA00AA5E50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		839C0FCAEB1B415E88B04309 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		DCD4C1F1677947F4AE2520EC /* Pods-KiwiUnitTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiUnitTest.xcconfig"; path = "Pods/Pods-KiwiUnitTest.xcconfig"; sourceTree = SOURCE_ROOT; };
+		E3CDCAA2935B46F496E2D921 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		214E53EC169FD37D00A457C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44274248505E4AFE9FABF5A1 /* libPods-KiwiUnitTest.a in Frameworks */,
+				214F3183169FE4A4009EB674 /* libLLTableViewAdapter.a in Frameworks */,
+				21D0A4A716A367B000D80ACD /* CoreGraphics.framework in Frameworks */,
+				214F3167169FDDAA009EB674 /* SenTestingKit.framework in Frameworks */,
+				214E53F2169FD37D00A457C3 /* UIKit.framework in Frameworks */,
+				214E53F3169FD37D00A457C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F5863E1682757C00AA5E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212E872E16828ACB0040F9C5 /* CoreGraphics.framework in Frameworks */,
+				21F586451682757C00AA5E50 /* Foundation.framework in Frameworks */,
+				21F5867F16827AD000AA5E50 /* UIKit.framework in Frameworks */,
+				D4F29531053F474594028C08 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		214E53F4169FD37D00A457C3 /* KiwiUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				214E53FB169FD37D00A457C3 /* LLArrayControllerSpec.m */,
+				214F3168169FDEDE009EB674 /* LLIndexPathExtensionTests.m */,
+				214E53F5169FD37D00A457C3 /* Supporting Files */,
+			);
+			path = KiwiUnitTest;
+			sourceTree = "<group>";
+		};
+		214E53F5169FD37D00A457C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				214E53F6169FD37D00A457C3 /* KiwiUnitTest-Info.plist */,
+				214E53F7169FD37D00A457C3 /* InfoPlist.strings */,
+				214E53FD169FD37D00A457C3 /* KiwiUnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		214F314F169FDB82009EB674 /* LLTableViewAdapterTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				214F3158169FDB82009EB674 /* AppDelegate.h */,
+				214F3159169FDB82009EB674 /* AppDelegate.m */,
+				214F3150169FDB82009EB674 /* Supporting Files */,
+			);
+			path = LLTableViewAdapterTestApp;
+			sourceTree = "<group>";
+		};
+		214F3150169FDB82009EB674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				214F3151169FDB82009EB674 /* LLTableViewAdapterTestApp-Info.plist */,
+				214F3152169FDB82009EB674 /* InfoPlist.strings */,
+				214F3155169FDB82009EB674 /* main.m */,
+				214F3157169FDB82009EB674 /* LLTableViewAdapterTestApp-Prefix.pch */,
+				214F315B169FDB82009EB674 /* Default.png */,
+				214F315D169FDB82009EB674 /* Default@2x.png */,
+				214F315F169FDB82009EB674 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F586381682757C00AA5E50 = {
+			isa = PBXGroup;
+			children = (
+				21F5868016827AE500AA5E50 /* Podfile */,
+				21F5868116827AFA00AA5E50 /* README.md */,
+				21F5867D168279BB00AA5E50 /* LLTableViewAdapter.podspec */,
+				DCD4C1F1677947F4AE2520EC /* Pods-KiwiUnitTest.xcconfig */,
+				839C0FCAEB1B415E88B04309 /* Pods.xcconfig */,
+				21F586431682757C00AA5E50 /* Frameworks */,
+				214E53F4169FD37D00A457C3 /* KiwiUnitTest */,
+				21F586461682757C00AA5E50 /* LLTableViewAdapter */,
+				214F314F169FDB82009EB674 /* LLTableViewAdapterTestApp */,
+				21F586421682757C00AA5E50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21F586421682757C00AA5E50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F586411682757C00AA5E50 /* libLLTableViewAdapter.a */,
+				214E53F0169FD37D00A457C3 /* KiwiUnitTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21F586431682757C00AA5E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3CDCAA2935B46F496E2D921 /* libPods.a */,
+				212E872C16828A350040F9C5 /* CoreGraphics.framework */,
+				21F586441682757C00AA5E50 /* Foundation.framework */,
+				21F586531682757D00AA5E50 /* SenTestingKit.framework */,
+				21F5867E16827AD000AA5E50 /* UIKit.framework */,
+				1CCA53512EB442899CEE8B65 /* libPods-KiwiUnitTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21F586461682757C00AA5E50 /* LLTableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				21F5866C1682766100AA5E50 /* Classes */,
+				21F586471682757C00AA5E50 /* Supporting Files */,
+			);
+			path = LLTableViewAdapter;
+			sourceTree = "<group>";
+		};
+		21F586471682757C00AA5E50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F586481682757C00AA5E50 /* LLTableViewAdapter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F5866C1682766100AA5E50 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				21F5866D1682766100AA5E50 /* LLArrayController.h */,
+				21F5866E1682766100AA5E50 /* LLArrayController.m */,
+				21F5866F1682766100AA5E50 /* LLTableViewAdapter.h */,
+				21F586701682766100AA5E50 /* LLTableViewAdapter.m */,
+				21F5867A168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.h */,
+				21F5867B168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		214E53EF169FD37D00A457C3 /* KiwiUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 214E53FE169FD37D00A457C3 /* Build configuration list for PBXNativeTarget "KiwiUnitTest" */;
+			buildPhases = (
+				214E53EB169FD37D00A457C3 /* Sources */,
+				214E53EC169FD37D00A457C3 /* Frameworks */,
+				214E53ED169FD37D00A457C3 /* Resources */,
+				214E53EE169FD37D00A457C3 /* ShellScript */,
+				FF79D83C56B445FA87A8A77E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				214F3185169FE4BC009EB674 /* PBXTargetDependency */,
+			);
+			name = KiwiUnitTest;
+			productName = KiwiUnitTest;
+			productReference = 214E53F0169FD37D00A457C3 /* KiwiUnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		21F586401682757C00AA5E50 /* LLTableViewAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F586661682757D00AA5E50 /* Build configuration list for PBXNativeTarget "LLTableViewAdapter" */;
+			buildPhases = (
+				21F5863D1682757C00AA5E50 /* Sources */,
+				21F5863E1682757C00AA5E50 /* Frameworks */,
+				21F5863F1682757C00AA5E50 /* CopyFiles */,
+				975B30773C194364948515A4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLTableViewAdapter;
+			productName = LLTableViewAdapter;
+			productReference = 21F586411682757C00AA5E50 /* libLLTableViewAdapter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21F586391682757C00AA5E50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Lawrence Lomax";
+			};
+			buildConfigurationList = 21F5863C1682757C00AA5E50 /* Build configuration list for PBXProject "LLTableViewAdapter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 21F586381682757C00AA5E50;
+			productRefGroup = 21F586421682757C00AA5E50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F586401682757C00AA5E50 /* LLTableViewAdapter */,
+				214E53EF169FD37D00A457C3 /* KiwiUnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		214E53ED169FD37D00A457C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214E53F9169FD37D00A457C3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		214E53EE169FD37D00A457C3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		975B30773C194364948515A4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		FF79D83C56B445FA87A8A77E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-KiwiUnitTest-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		214E53EB169FD37D00A457C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214E53FC169FD37D00A457C3 /* LLArrayControllerSpec.m in Sources */,
+				214F3169169FDEDE009EB674 /* LLIndexPathExtensionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F5863D1682757C00AA5E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F586711682766100AA5E50 /* LLArrayController.m in Sources */,
+				21F586721682766100AA5E50 /* LLTableViewAdapter.m in Sources */,
+				21F5867C168278F200AA5E50 /* NSIndexPath+LLArrayControllerExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		214F3185169FE4BC009EB674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F586401682757C00AA5E50 /* LLTableViewAdapter */;
+			targetProxy = 214F3184169FE4BC009EB674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		214E53F7169FD37D00A457C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214E53F8169FD37D00A457C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		214F3152169FDB82009EB674 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214F3153169FDB82009EB674 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		214E53FF169FD37D00A457C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD4C1F1677947F4AE2520EC /* Pods-KiwiUnitTest.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LLTableViewAdapterTestApp.app/LLTableViewAdapterTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KiwiUnitTest/KiwiUnitTest-Prefix.pch";
+				INFOPLIST_FILE = "KiwiUnitTest/KiwiUnitTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		214E5400169FD37D00A457C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD4C1F1677947F4AE2520EC /* Pods-KiwiUnitTest.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LLTableViewAdapterTestApp.app/LLTableViewAdapterTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KiwiUnitTest/KiwiUnitTest-Prefix.pch";
+				INFOPLIST_FILE = "KiwiUnitTest/KiwiUnitTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		21F586641682757D00AA5E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839C0FCAEB1B415E88B04309 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21F586651682757D00AA5E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839C0FCAEB1B415E88B04309 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21F586671682757D00AA5E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839C0FCAEB1B415E88B04309 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/LLTableViewAdapter.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP2.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LLTableViewAdapter/LLTableViewAdapter-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		21F586681682757D00AA5E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839C0FCAEB1B415E88B04309 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/LLTableViewAdapter.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP2.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LLTableViewAdapter/LLTableViewAdapter-Prefix.pch";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		214E53FE169FD37D00A457C3 /* Build configuration list for PBXNativeTarget "KiwiUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214E53FF169FD37D00A457C3 /* Debug */,
+				214E5400169FD37D00A457C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F5863C1682757C00AA5E50 /* Build configuration list for PBXProject "LLTableViewAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F586641682757D00AA5E50 /* Debug */,
+				21F586651682757D00AA5E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F586661682757D00AA5E50 /* Build configuration list for PBXNativeTarget "LLTableViewAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F586671682757D00AA5E50 /* Debug */,
+				21F586681682757D00AA5E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21F586391682757C00AA5E50 /* Project object */;
+}

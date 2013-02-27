@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LLTableViewAdapter' target in the 'LLTableViewAdapter' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
